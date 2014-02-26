@@ -7,7 +7,7 @@
   
 	}
         #zoom {
-
+			
           }
 		  
 		  #zoom2 {
@@ -65,11 +65,13 @@
 		  }
 		  
 		  .welcome{
-			  font-family: 'Bree Serif', serif;
+			font-family: 'Bree Serif', serif;
 			font-size:24px;
 			color:#FFF;
+			margin-top: 5em;
 			
         text-shadow: 1px 1px 2px #363636;
         filter: dropshadow(color=#363636, offx=1, offy=1);
         
 		  }
+		  

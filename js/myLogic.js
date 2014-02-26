@@ -205,12 +205,16 @@ $(function(){
             
         }
         $('#bg').hammer().on("tap", function(event) {
-        	var images=["red","blue","green","orange","purple","black"];
-            var num = Math.floor((Math.random()*images.length)+1);
-            var img = images[num];
+        	var color=["red","blue","green","orange","purple","black"];
+            var num = Math.floor((Math.random()*color.length)+1);
+            var col = color[num];
             document.getElementById("bg").style.backgroundImage="url('')";
-            document.getElementById("bg").style.backgroundColor=img;
-            
+            document.getElementById("bg").style.backgroundColor=col; 
         });
-
+        $('#bg').hammer().on('drag', function(event) {
+        	var color=["red","blue","green","orange","purple","black"];
+            var num = Math.floor((Math.random()*color.length)+1);
+            var col = color[num];
+        	document.getElementById('text').style.color=col;
+        });
     }
