@@ -204,5 +204,13 @@ $(function(){
 
             
         }
+        $('#bg').hammer().on("tap", function(event) {
+        	var images=["red","blue","green","orange","purple","black"];
+            var num = Math.floor((Math.random()*images.length)+1);
+            var img = images[num];
+            document.getElementById("bg").style.backgroundImage="url('')";
+            document.getElementById("bg").style.backgroundColor=img;
+            
+        });
 
     }
